@@ -12,3 +12,9 @@ resource "random_pet" "example1" {
   separator = "-"
 }
 
+resource "random_pet" "example2" {
+  count = 1
+
+  length    = "3"
+  separator = "-"
+}
